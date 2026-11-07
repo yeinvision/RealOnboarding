@@ -1,0 +1,122 @@
+'use client';
+
+import Link from 'next/link';
+import { Sidebar } from '@/components/Sidebar';
+import { Header } from '@/components/Header';
+import { MarkdownContent } from '@/components/MarkdownContent';
+
+const stage1Content = `# Stage 1: 리얼워크 멤버로 시작하기
+
+## 1️⃣ 리얼워크는 어떤 회사인가요?
+
+리얼워크는 **조직의 가능성을 깨우고, 사람의 성장을 돕는 회사**입니다.
+
+### 핵심 가치
+- 🎯 **진정성** - 진심으로 클라이언트의 문제를 이해하고 해결
+- 🌱 **성장** - 팀원 개개인의 성장을 중시
+- 🤝 **협력** - 함께 배우고 함께 성장
+- 🚀 **혁신** - 지속적인 개선과 혁신
+
+### 서비스
+
+리얼워크는 주로 **워크숍(Workshop)**을 통해 기업들을 지원합니다.
+
+- 경영진 리더십 프로그램
+- 팀 빌딩 및 소통
+- 전략 수립 워크숍
+- 변화 관리 프로그램
+
+## 2️⃣ 리얼워크 팀은 어떻게 구성되어 있나요?
+
+15명의 팀원이 6개의 **셀(Cell)**로 나뉘어 일합니다.
+
+### 마비셀 (Leadership)
+- 마크(대표), 에비(부사장)
+- 역할: 경영진 리더급 프로젝트, 회사 운영 전반
+
+### 도미솔셀 (Design & Creative)
+- 대니(팀장), 루시(선임컨설턴트)
+- 역할: 디자인, 영상, 사용자 경험(AX) 전반
+- 특징: "잡스(JOBS)" AI 에이전트 개발·운영
+
+### 원픽셀셀 (Sales)
+- 레이첼, 케이트, 벨라, 보다
+- 역할: 새로운 제안 접수 및 초기 상담
+- 특징: 고객의 첫 연락처
+
+### 미리미리셀 (Planning)
+- 콰지, 히원
+- 역할: 프로젝트 기획 및 전략 수립
+
+### AtoZ셀 (Execution)
+- 이안, 줄리, 노라
+- 역할: 프로젝트 처음부터 끝까지 실행
+
+### 액셀 (Facilitation)
+- 빌리, 이든
+- 역할: 실제 워크숍 진행 및 퍼실리테이션
+
+## 3️⃣ 일은 어떻게 흘러가나요?
+
+### 제안 → 인수인계 → 실행 → 완료
+
+1. **원픽셀셀**이 고객의 제안을 받음
+2. 기본 정보를 정리한 후 **B미팅(Bridge Meeting)**으로 다른 팀들에게 전달
+3. **미리미리셀**과 **AtoZ셀**이 프로젝트 계획 수립
+4. **액셀**이 실제 워크숍 진행
+5. 프로젝트 완료 후 **Case Study** 작성
+
+## 4️⃣ 당신이 할 첫 번째 일
+
+당신은 어느 셀에 속하든, 다음 과정을 따를 것입니다:
+
+1. **Stage 2**에서 프로젝트의 4가지 유형 학습
+2. **Stage 3**에서 PL(Project Leader) 역할 학습
+3. **첫 프로젝트 배정** - 선배 PL과 함께 시작
+4. 배운 것을 실전에 적용하며 성장
+
+---
+
+> 💡 **핵심**: 리얼워크는 신입의 성장을 응원합니다. 모르는 것을 물어보는 것은 당연하고, 자신의 속도로 배워나가는 것이 중요합니다.
+`;
+
+export default function Stage1() {
+  return (
+    <div className="layout">
+      <Sidebar />
+      <div className="main">
+        <Header />
+        <div className="content">
+          <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+            <Link href="/" style={{ color: 'var(--accent)', marginBottom: '24px', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+              <svg viewBox="0 0 24 24" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: '16px', height: '16px' }}>
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+              홈으로 돌아가기
+            </Link>
+
+            <MarkdownContent content={stage1Content} />
+
+            <div style={{ marginTop: '60px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px' }}>
+              <Link href="/stage-2" style={{ textDecoration: 'none' }}>
+                <div style={{ padding: '24px', background: 'var(--card)', border: '1px solid var(--line)', borderRadius: 'var(--radius)', cursor: 'pointer', transition: 'all 0.3s ease' }} className="stage-card">
+                  <span style={{ fontSize: '12px', fontWeight: 600, color: 'var(--accent)' }}>다음 단계</span>
+                  <h3 style={{ marginTop: '8px', marginBottom: '8px', color: 'var(--ink)' }}>Stage 2</h3>
+                  <p style={{ fontSize: '14px', color: 'var(--muted)', margin: 0 }}>프로젝트와 일하는 방식</p>
+                </div>
+              </Link>
+              <Link href="/glossary" style={{ textDecoration: 'none' }}>
+                <div style={{ padding: '24px', background: 'var(--card)', border: '1px solid var(--line)', borderRadius: 'var(--radius)', cursor: 'pointer', transition: 'all 0.3s ease' }} className="stage-card">
+                  <span style={{ fontSize: '12px', fontWeight: 600, color: 'var(--accent)' }}>참고자료</span>
+                  <h3 style={{ marginTop: '8px', marginBottom: '8px', color: 'var(--ink)' }}>용어사전</h3>
+                  <p style={{ fontSize: '14px', color: 'var(--muted)', margin: 0 }}>핵심 용어 학습</p>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
