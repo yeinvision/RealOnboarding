@@ -6,49 +6,49 @@ import Link from 'next/link';
 
 const teamData = [
   {
-    department: '경영진 (Leadership)',
+    department: '경영�?(Leadership)',
     color: '#ff6b6b',
     members: [
-      { name: '정강욱 (Mark)', role: '대표', email: 'mark@realwork.group', phone: '010-5767-5799', birthday: '5월 11일' },
-      { name: '이연임 (Abby)', role: '부사장', email: 'abby@realwork.group', phone: '010-2077-8969', birthday: '1월 24일' },
+      { name: '?�강??(Mark)', role: '?�??, email: 'mark@realwork.group', phone: '010-5767-5799', birthday: '5??11?? },
+      { name: '?�연??(Abby)', role: '부?�장', email: 'abby@realwork.group', phone: '010-2077-8969', birthday: '1??24?? },
     ]
   },
   {
-    department: 'FT (퍼실리테이터)',
+    department: 'FT (?�실리테?�터)',
     color: '#4ecdc4',
     members: [
-      { name: '강평안 (Peace)', role: '소장', email: 'peace@realwork.group', phone: '010-9547-0905', birthday: '5월 23일' },
-      { name: '신용주 (Billy)', role: '소장', email: 'billy@realwork.group', phone: '010-5144-5093', birthday: '2월 21일' },
+      { name: '강평??(Peace)', role: '?�장', email: 'peace@realwork.group', phone: '010-9547-0905', birthday: '5??23?? },
+      { name: '?�용�?(Billy)', role: '?�장', email: 'billy@realwork.group', phone: '010-5144-5093', birthday: '2??21?? },
     ]
   },
   {
-    department: '컨설팅팀',
+    department: '컨설?��?',
     color: '#95e1d3',
     members: [
-      { name: '이지현 (Rachel)', role: '팀장', email: 'rachel@realwork.group', phone: '010-8961-2294', birthday: '2월 17일' },
-      { name: '윤지영 (Kate)', role: '수석컨설턴트', email: 'kate@realwork.group', phone: '010-3454-2474', birthday: '1월 21일' },
-      { name: '송준기 (Kwazii)', role: '수석컨설턴트', email: 'kwazii@realwork.group', phone: '010-4732-5269', birthday: '10월 11일' },
-      { name: '서희원 (Hewon)', role: '책임컨설턴트', email: 'hewon@realwork.group', phone: '010-6677-5065', birthday: '9월 27일' },
-      { name: '정성화 (Julie)', role: '책임컨설턴트', email: 'julie@realwork.group', phone: '010-2585-4449', birthday: '5월 13일' },
-      { name: '전예인 (Eden)', role: '컨설턴트', email: 'eden@realwork.group', phone: '010-2324-9495', birthday: '8월 19일' },
-      { name: '노은혜 (Bella)', role: '컨설턴트', email: 'bella@realwork.group', phone: '010-3011-8059', birthday: '7월 27일' },
-      { name: '이석영 (Boda)', role: '인턴', email: 'boda@realwork.group', phone: '010-4912-9544', birthday: '5월 15일' },
+      { name: '?��???(Rachel)', role: '?�??, email: 'rachel@realwork.group', phone: '010-8961-2294', birthday: '2??17?? },
+      { name: '?��???(Kate)', role: '?�석컨설?�트', email: 'kate@realwork.group', phone: '010-3454-2474', birthday: '1??21?? },
+      { name: '?��?�?(Kwazii)', role: '?�석컨설?�트', email: 'kwazii@realwork.group', phone: '010-4732-5269', birthday: '10??11?? },
+      { name: '?�희??(Hewon)', role: '책임컨설?�트', email: 'hewon@realwork.group', phone: '010-6677-5065', birthday: '9??27?? },
+      { name: '?�성??(Julie)', role: '책임컨설?�트', email: 'julie@realwork.group', phone: '010-2585-4449', birthday: '5??13?? },
+      { name: '?�예??(Eden)', role: '컨설?�트', email: 'eden@realwork.group', phone: '010-2324-9495', birthday: '8??19?? },
+      { name: '?��???(Bella)', role: '컨설?�트', email: 'bella@realwork.group', phone: '010-3011-8059', birthday: '7??27?? },
+      { name: '?�석??(Boda)', role: '?�턴', email: 'boda@realwork.group', phone: '010-4912-9544', birthday: '5??15?? },
     ]
   },
   {
-    department: '미디어팀',
+    department: '미디?��?',
     color: '#ffa502',
     members: [
-      { name: '최동인 (Danny)', role: '팀장', email: 'danny@realwork.group', phone: '010-2883-0630', birthday: '6월 30일' },
-      { name: '윤단비 (Norah)', role: '디자이너', email: 'Norah@realwork.group', phone: '010-5289-7644', birthday: '8월 21일' },
-      { name: '박서현 (Lucy)', role: '선임컨설턴트', email: 'lucy@realwork.group', phone: '010-9423-8396', birthday: '12월 30일' },
+      { name: '최동??(Danny)', role: '?�??, email: 'danny@realwork.group', phone: '010-2883-0630', birthday: '6??30?? },
+      { name: '?�단�?(Norah)', role: '?�자?�너', email: 'Norah@realwork.group', phone: '010-5289-7644', birthday: '8??21?? },
+      { name: '박서??(Lucy)', role: '?�임컨설?�트', email: 'lucy@realwork.group', phone: '010-9423-8396', birthday: '12??30?? },
     ]
   },
 ];
 
 export default function Team() {
   return (
-    <div className="layout">
+    <div className="app">
       <Sidebar />
       <div className="main">
         <Header />
@@ -59,15 +59,15 @@ export default function Team() {
                 <line x1="19" y1="12" x2="5" y2="12"></line>
                 <polyline points="12 19 5 12 12 5"></polyline>
               </svg>
-              홈으로 돌아가기
+              ?�으�??�아가�?
             </Link>
 
             <div style={{ marginBottom: '40px' }}>
               <h1 style={{ fontSize: '48px', fontWeight: 700, marginBottom: '12px', marginTop: '0', color: 'var(--ink)' }}>
-                👥 팀 소개
+                ?�� ?� ?�개
               </h1>
               <p style={{ fontSize: '18px', color: 'var(--muted)', margin: 0 }}>
-                15명의 리얼워커들을 소개합니다. 편하게 연락주세요!
+                15명의 리얼?�커?�을 ?�개?�니?? ?�하�??�락주세??
               </p>
             </div>
 
@@ -100,19 +100,19 @@ export default function Team() {
 
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '13px', color: 'var(--muted)' }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                          <span style={{ color: 'var(--faint)' }}>✉</span>
+                          <span style={{ color: 'var(--faint)' }}>??/span>
                           <a href={`mailto:${member.email}`} style={{ color: 'var(--accent)', textDecoration: 'none' }}>
                             {member.email}
                           </a>
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                          <span style={{ color: 'var(--faint)' }}>📞</span>
+                          <span style={{ color: 'var(--faint)' }}>?��</span>
                           <a href={`tel:${member.phone}`} style={{ color: 'var(--accent)', textDecoration: 'none' }}>
                             {member.phone}
                           </a>
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                          <span style={{ color: 'var(--faint)' }}>🎂</span>
+                          <span style={{ color: 'var(--faint)' }}>?��</span>
                           <span>{member.birthday}</span>
                         </div>
                       </div>
@@ -124,11 +124,11 @@ export default function Team() {
 
             <div style={{ marginTop: '60px', paddingTop: '40px', borderTop: '1px solid var(--line)' }}>
               <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '16px', color: 'var(--ink)' }}>
-                팀 문화
+                ?� 문화
               </h2>
               <p style={{ color: 'var(--muted)', marginBottom: '16px', lineHeight: '1.7' }}>
-                리얼워크는 신입들의 성장을 중시하는 팀입니다. 각자의 역할 속에서 배우고, 질문하고, 함께 성장해나갑니다. 
-                온보딩 과정에서 만난 팀원들에게 언제든 편하게 물어보세요. 우리는 모두가 새로 배운다는 것을 잘 알고 있습니다.
+                리얼?�크???�입?�의 ?�장??중시?�는 ?�?�니?? 각자????�� ?�에??배우�? 질문?�고, ?�께 ?�장?�나갑니?? 
+                ?�보??과정?�서 만난 ?�?�들?�게 ?�제???�하�?물어보세?? ?�리??모두가 ?�로 배운?�는 것을 ???�고 ?�습?�다.
               </p>
             </div>
           </div>
