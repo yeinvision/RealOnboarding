@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import { JSX } from 'react';
 
@@ -104,10 +105,12 @@ export function Sidebar() {
       <aside className={`side ${isOpen ? 'open' : ''}`}>
         <div className="brand">
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '12px' }}>
-            <img 
+            <Image 
               src="/realwork-logo.png" 
               alt="RealWork 로고" 
-              style={{ height: '32px', width: 'auto' }}
+              width={32}
+              height={32}
+              priority
             />
           </div>
           <div className="title">🚀 RealWork</div>

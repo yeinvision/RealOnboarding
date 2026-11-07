@@ -7,24 +7,24 @@ import { useState } from 'react';
 
 const faqs = [
   {
-    question: '온보딩은 얼마나 걸리나요?',
-    answer: '3개의 Stage로 구성되어 있으며, 총 4-5시간 정도 소요됩니다. 각 Stage는 독립적으로 진행 가능하므로, 자신의 속도에 맞게 학습하시면 됩니다.'
+    question: '?�보?��? ?�마??걸리?�요?',
+    answer: '3개의 Stage�?구성?�어 ?�으�? �?4-5?�간 ?�도 ?�요?�니?? �?Stage???�립?�으�?진행 가?�하므�? ?�신???�도??맞게 ?�습?�시�??�니??'
   },
   {
-    question: '중간에 중단해도 되나요?',
-    answer: '물론입니다! 온보딩은 완전히 자유로운 속도로 진행되도록 설계되었습니다. 언제든 중단하고 다시 시작할 수 있습니다.'
+    question: '중간??중단?�도 ?�나??',
+    answer: '물론?�니?? ?�보?��? ?�전???�유로운 ?�도�?진행?�도�??�계?�었?�니?? ?�제??중단?�고 ?�시 ?�작?????�습?�다.'
   },
   {
-    question: '모르는 용어가 나오면 어떻게 하나요?',
-    answer: '용어사전 페이지에서 리얼워크의 핵심 용어들을 찾아볼 수 있습니다. 정의되지 않은 용어는 팀원들에게 편하게 물어보세요!'
+    question: '모르???�어가 ?�오�??�떻�??�나??',
+    answer: '?�어?�전 ?�이지?�서 리얼?�크???�심 ?�어?�을 찾아�????�습?�다. ?�의?��? ?��? ?�어???�?�들?�게 ?�하�?물어보세??'
   },
   {
-    question: '첫 프로젝트 전에 뭘 준비해야 하나요?',
-    answer: 'Stage 1과 Stage 2를 완료한 후, Stage 3에서 자세한 가이드를 따르시면 됩니다. 메멘토(Mentor)가 배정되어 함께 진행합니다.'
+    question: '�??�로?�트 ?�에 �?준비해???�나??',
+    answer: 'Stage 1�?Stage 2�??�료???? Stage 3?�서 ?�세??가?�드�??�르?�면 ?�니?? 메멘??Mentor)가 배정?�어 ?�께 진행?�니??'
   },
   {
-    question: '온보딩 이후에는?',
-    answer: '온보딩이 끝난 후에도 FAQ나 용어사전, 팀 소개 페이지는 언제든 다시 참고할 수 있습니다. 추가 학습 자료도 계속 업데이트될 예정입니다.'
+    question: '?�보???�후?�는?',
+    answer: '?�보?�이 ?�난 ?�에??FAQ???�어?�전, ?� ?�개 ?�이지???�제???�시 참고?????�습?�다. 추�? ?�습 ?�료??계속 ?�데?�트???�정?�니??'
   },
 ];
 
@@ -43,15 +43,15 @@ export default function FAQ() {
                 <line x1="19" y1="12" x2="5" y2="12"></line>
                 <polyline points="12 19 5 12 12 5"></polyline>
               </svg>
-              홈으로 돌아가기
+              ?�으�??�아가�?
             </Link>
 
             <div style={{ marginBottom: '40px' }}>
               <h1 style={{ fontSize: '48px', fontWeight: 700, marginBottom: '12px', marginTop: '0', color: 'var(--ink)' }}>
-                자주 묻는 질문 (FAQ)
+                ?�주 묻는 질문 (FAQ)
               </h1>
               <p style={{ fontSize: '18px', color: 'var(--muted)', margin: 0 }}>
-                온보딩에 대해 궁금하신 점들을 모았습니다.
+                ?�보?�에 ?�??궁금?�신 ?�들??모았?�니??
               </p>
             </div>
 
@@ -122,13 +122,13 @@ export default function FAQ() {
 
             <div style={{ marginTop: '60px', paddingTop: '40px', borderTop: '1px solid var(--line)' }}>
               <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '16px', color: 'var(--ink)' }}>
-                더 궁금한 점이 있으신가요?
+                ??궁금???�이 ?�으?��???
               </h2>
               <p style={{ color: 'var(--muted)', marginBottom: '16px' }}>
-                팀 멤버들은 언제든 새로운 질문을 환영합니다. 편하게 물어보세요!
+                ?� 멤버?��? ?�제???�로??질문???�영?�니?? ?�하�?물어보세??
               </p>
               <Link href="/team" style={{ color: 'var(--accent)', fontWeight: 600 }}>
-                팀 소개 페이지 보기 →
+                ?� ?�개 ?�이지 보기 ??
               </Link>
             </div>
           </div>

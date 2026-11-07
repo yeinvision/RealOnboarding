@@ -25,7 +25,7 @@ export default function OnboardingPrep() {
   const [saved, setSaved] = useState(false);
   const [newbieeName, setNewbieeName] = useState('');
 
-  // 페이지 로드 시 저장된 데이터 복원
+  // ?�이지 로드 ???�?�된 ?�이??복원
   useEffect(() => {
     const savedData = localStorage.getItem('onboarding-prep');
     if (savedData) {
@@ -68,17 +68,17 @@ export default function OnboardingPrep() {
       <header style={{ background: 'var(--card)', padding: '20px 24px', borderBottom: '1px solid var(--line)' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h1 style={{ margin: '0 0 8px 0', color: 'var(--ink)', fontSize: '24px', fontWeight: 700 }}>
-            🎉 온보딩 준비하기
+            ?�� ?�보??준비하�?
           </h1>
           <p style={{ margin: 0, color: 'var(--muted)', fontSize: '14px' }}>
-            선임이 신입 멤버의 정보를 미리 준비하세요
+            ?�임???�입 멤버???�보�?미리 준비하?�요
           </p>
         </div>
       </header>
 
       <main style={{ maxWidth: '1200px', margin: '0 auto', padding: '32px 24px' }}>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', alignItems: 'start' }}>
-          {/* 입력 폼 */}
+          {/* ?�력 ??*/}
           <div
             style={{
               background: 'var(--card)',
@@ -88,21 +88,21 @@ export default function OnboardingPrep() {
             }}
           >
             <h2 style={{ marginTop: 0, marginBottom: '20px', color: 'var(--ink)', fontSize: '18px' }}>
-              신입 정보 입력
+              ?�입 ?�보 ?�력
             </h2>
 
             <div style={{ display: 'grid', gap: '16px' }}>
-              {/* 신입 이름 */}
+              {/* ?�입 ?�름 */}
               <div>
                 <label style={{ display: 'block', marginBottom: '6px', color: 'var(--muted)', fontSize: '13px', fontWeight: 600 }}>
-                  신입 이름 *
+                  ?�입 ?�름 *
                 </label>
                 <input
                   type="text"
                   name="newbieeName"
                   value={data.newbieeName}
                   onChange={handleChange}
-                  placeholder="예: 이안"
+                  placeholder="?? ?�안"
                   style={{
                     width: '100%',
                     padding: '10px 12px',
@@ -117,17 +117,17 @@ export default function OnboardingPrep() {
                 />
               </div>
 
-              {/* 선임 이름 */}
+              {/* ?�임 ?�름 */}
               <div>
                 <label style={{ display: 'block', marginBottom: '6px', color: 'var(--muted)', fontSize: '13px', fontWeight: 600 }}>
-                  선임 이름
+                  ?�임 ?�름
                 </label>
                 <input
                   type="text"
                   name="mentorName"
                   value={data.mentorName}
                   onChange={handleChange}
-                  placeholder="예: 줄리"
+                  placeholder="?? 줄리"
                   style={{
                     width: '100%',
                     padding: '10px 12px',
@@ -142,10 +142,10 @@ export default function OnboardingPrep() {
                 />
               </div>
 
-              {/* 입사일 */}
+              {/* ?�사??*/}
               <div>
                 <label style={{ display: 'block', marginBottom: '6px', color: 'var(--muted)', fontSize: '13px', fontWeight: 600 }}>
-                  입사일
+                  ?�사??
                 </label>
                 <input
                   type="date"
@@ -166,10 +166,10 @@ export default function OnboardingPrep() {
                 />
               </div>
 
-              {/* 부서 */}
+              {/* 부??*/}
               <div>
                 <label style={{ display: 'block', marginBottom: '6px', color: 'var(--muted)', fontSize: '13px', fontWeight: 600 }}>
-                  부서
+                  부??
                 </label>
                 <select
                   name="department"
@@ -187,11 +187,11 @@ export default function OnboardingPrep() {
                     boxSizing: 'border-box',
                   }}
                 >
-                  <option value="">선택하세요</option>
-                  <option value="퍼실리테이션">퍼실리테이션</option>
-                  <option value="컨설팅">컨설팅</option>
-                  <option value="미디어">미디어</option>
-                  <option value="신사업">신사업</option>
+                  <option value="">?�택?�세??/option>
+                  <option value="?�실리테?�션">?�실리테?�션</option>
+                  <option value="컨설??>컨설??/option>
+                  <option value="미디??>미디??/option>
+                  <option value="?�사??>?�사??/option>
                 </select>
               </div>
 
@@ -205,7 +205,7 @@ export default function OnboardingPrep() {
                   name="role"
                   value={data.role}
                   onChange={handleChange}
-                  placeholder="예: 컨설턴트"
+                  placeholder="?? 컨설?�트"
                   style={{
                     width: '100%',
                     padding: '10px 12px',
@@ -220,16 +220,16 @@ export default function OnboardingPrep() {
                 />
               </div>
 
-              {/* 선임의 한마디 */}
+              {/* ?�임???�마??*/}
               <div>
                 <label style={{ display: 'block', marginBottom: '6px', color: 'var(--muted)', fontSize: '13px', fontWeight: 600 }}>
-                  선임의 한마디 (메모)
+                  ?�임???�마??(메모)
                 </label>
                 <textarea
                   name="notes"
                   value={data.notes}
                   onChange={handleChange}
-                  placeholder="신입 멤버에게 해주고 싶은 말, 역할 소개, 첫 프로젝트 안내 등..."
+                  placeholder="?�입 멤버?�게 ?�주�??��? �? ??�� ?�개, �??�로?�트 ?�내 ??.."
                   style={{
                     width: '100%',
                     padding: '10px 12px',
@@ -264,7 +264,7 @@ export default function OnboardingPrep() {
                   onMouseEnter={(e) => (e.currentTarget.style.opacity = '0.85')}
                   onMouseLeave={(e) => (e.currentTarget.style.opacity = '1')}
                 >
-                  {saved ? '✅ 저장됨' : '💾 저장하기'}
+                  {saved ? '???�?�됨' : '?�� ?�?�하�?}
                 </button>
                 <button
                   onClick={handleReset}
@@ -282,7 +282,7 @@ export default function OnboardingPrep() {
                   onMouseEnter={(e) => (e.currentTarget.style.opacity = '0.85')}
                   onMouseLeave={(e) => (e.currentTarget.style.opacity = '1')}
                 >
-                  🔄 초기화
+                  ?�� 초기??
                 </button>
               </div>
             </div>
@@ -303,15 +303,15 @@ export default function OnboardingPrep() {
               alignItems: 'center',
             }}
           >
-            <div style={{ marginBottom: '24px', fontSize: '48px' }}>👋</div>
+            <div style={{ marginBottom: '24px', fontSize: '48px' }}>?��</div>
 
             {newbieeName ? (
               <>
                 <h2 style={{ margin: '0 0 8px 0', color: 'var(--accent)', fontSize: '28px', fontWeight: 700 }}>
-                  {newbieeName}님
+                  {newbieeName}??
                 </h2>
                 <p style={{ margin: '0 0 16px 0', color: 'var(--ink)', fontSize: '16px', fontWeight: 500 }}>
-                  RealWork에 오신 것을 환영합니다! 🎉
+                  RealWork???�신 것을 ?�영?�니?? ?��
                 </p>
 
                 {data.mentorName && (
@@ -322,7 +322,7 @@ export default function OnboardingPrep() {
                       borderTop: '1px solid var(--line)',
                     }}
                   >
-                    <p style={{ margin: '0 0 8px 0', color: 'var(--muted)', fontSize: '12px' }}>선임:</p>
+                    <p style={{ margin: '0 0 8px 0', color: 'var(--muted)', fontSize: '12px' }}>?�임:</p>
                     <p style={{ margin: 0, color: 'var(--ink)', fontSize: '14px', fontWeight: 600 }}>
                       {data.mentorName}
                     </p>
@@ -339,7 +339,7 @@ export default function OnboardingPrep() {
                       width: '100%',
                     }}
                   >
-                    <p style={{ margin: '0 0 8px 0', color: 'var(--muted)', fontSize: '12px' }}>선임의 한마디:</p>
+                    <p style={{ margin: '0 0 8px 0', color: 'var(--muted)', fontSize: '12px' }}>?�임???�마??</p>
                     <p
                       style={{
                         margin: 0,
@@ -357,17 +357,17 @@ export default function OnboardingPrep() {
             ) : (
               <>
                 <h2 style={{ margin: '0 0 16px 0', color: 'var(--muted)', fontSize: '18px' }}>
-                  신입 이름을 입력하면 미리보기가 나타납니다
+                  ?�입 ?�름???�력?�면 미리보기가 ?��??�니??
                 </h2>
                 <p style={{ margin: 0, color: 'var(--faint)', fontSize: '13px' }}>
-                  좌측에서 신입 정보를 입력한 후 저장해주세요.
+                  좌측?�서 ?�입 ?�보�??�력?????�?�해주세??
                 </p>
               </>
             )}
           </div>
         </div>
 
-        {/* 안내 메시지 */}
+        {/* ?�내 메시지 */}
         <div
           style={{
             marginTop: '32px',
@@ -379,12 +379,12 @@ export default function OnboardingPrep() {
           }}
         >
           <p style={{ margin: 0, fontSize: '14px', lineHeight: '1.6' }}>
-            💡 <strong>팁:</strong> 이 정보는 브라우저에 저장되며, 신입이 온보딩을 시작할 때 개인화된 인사말을 보게 됩니다. 
-            정보를 저장한 후 신입에게 이 페이지의 링크를 공유하세요!
+            ?�� <strong>??</strong> ???�보??브라?��????�?�되�? ?�입???�보?�을 ?�작????개인?�된 ?�사말을 보게 ?�니?? 
+            ?�보�??�?�한 ???�입?�게 ???�이지??링크�?공유?�세??
           </p>
         </div>
 
-        {/* 뒤로가기 */}
+        {/* ?�로가�?*/}
         <div style={{ marginTop: '24px' }}>
           <Link
             href="/"
@@ -400,7 +400,7 @@ export default function OnboardingPrep() {
             onMouseEnter={(e) => (e.currentTarget.style.opacity = '0.7')}
             onMouseLeave={(e) => (e.currentTarget.style.opacity = '1')}
           >
-            ← 홈으로 돌아가기
+            ???�으�??�아가�?
           </Link>
         </div>
       </main>
