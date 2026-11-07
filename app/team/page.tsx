@@ -48,7 +48,7 @@ const teamData = [
 
 export default function Team() {
   return (
-    <div className="layout">
+    <div className="app">
       <Sidebar />
       <div className="main">
         <Header />

@@ -82,7 +82,7 @@ const stage1Content = `# Stage 1: 리얼워크 멤버로 시작하기
 
 export default function Stage1() {
   return (
-    <div className="layout">
+    <div className="app">
       <Sidebar />
       <div className="main">
         <Header />

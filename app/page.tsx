@@ -45,7 +45,7 @@ export default function Home() {
   if (!mounted) return null;
 
   return (
-    <div className="layout">
+    <div className="app">
       <Sidebar />
       <div className="main">
         <Header />

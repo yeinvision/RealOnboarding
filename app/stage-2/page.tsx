@@ -112,7 +112,7 @@ Stage 2를 마쳤다면, 이제 당신은:
 
 export default function Stage2() {
   return (
-    <div className="layout">
+    <div className="app">
       <Sidebar />
       <div className="main">
         <Header />

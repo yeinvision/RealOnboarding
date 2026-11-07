@@ -57,7 +57,7 @@ const terms = [
 
 export default function Glossary() {
   return (
-    <div className="layout">
+    <div className="app">
       <Sidebar />
       <div className="main">
         <Header />
