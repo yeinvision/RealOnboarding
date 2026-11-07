@@ -186,7 +186,7 @@ const stage3Content = `# Stage 3: 나의 첫 프로젝트
 
 export default function Stage3() {
   return (
-    <div className="layout">
+    <div className="app">
       <Sidebar />
       <div className="main">
         <Header />
